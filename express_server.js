@@ -8,7 +8,7 @@ app.use(multer({ dest: '/tmp/'}).any());
 app.set('view engine', 'ejs');
 
 app.use(express.static('images'));
-app.use(express.static('dest'));
+//app.use(express.static('dest'));
 app.use(express.static('pages'));
 
 app.use('/',router);
