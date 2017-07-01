@@ -5,6 +5,7 @@ var app = express();
 //app.use(fileUpload());
 var multer  = require('multer');
 app.use(multer({ dest: '/tmp/'}).any());
+app.set('view engine', 'ejs');
 
 app.use(express.static('images'));
 app.use(express.static('dest'));

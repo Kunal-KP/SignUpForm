@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Buddies Details</title>
+	</head>
+	<body>
+		<h2 style='text-align:center'> Buddy Page </h2>
+		<ul class="buddy">
+		  <% for(var i=0; i<buddy.length; i++) {%>
+			<li class="buddy">
+			  <span><%= buddy[i].name %></span>
+			  <span><%= buddy[i].number %></span>
+			  <span><img src="<%= buddy[i].image_url %>"/></span>
+			</li>
+		  <% } %>
+		</ul>
+		<a href='/'>Back</a>
+	</body>
+</html>
