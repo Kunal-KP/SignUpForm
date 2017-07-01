@@ -1,0 +1,21 @@
+{
+  "name": "sign_up_form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon express_server.js"
+  },
+  "author": "kunal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-fileupload": "^0.1.3",
+    "mongodb": "^2.2.29",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
