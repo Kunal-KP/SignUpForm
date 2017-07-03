@@ -12,5 +12,6 @@ app.use(express.static('images'));
 app.use(express.static('pages'));
 
 app.use('/',router);
-app.listen(8080);
+var port = process.env.port || 8080;
+app.listen(port);
 console.log('Localhost server started on port 8080');
